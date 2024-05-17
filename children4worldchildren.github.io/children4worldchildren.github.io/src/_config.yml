@@ -1,0 +1,39 @@
+url: ""
+baseurl: ""
+
+title: Children 4 World Children
+email: hello@children4worldchildren.com
+phone: +353899859326
+cro: 553917
+
+sass:
+    load_paths: 
+        - ./_sass
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "event"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "get-involved"
+    values:
+      layout: "get-involved"
+
+collections:
+  event:
+    output: true
+  get-involved:
+    output: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate-v2

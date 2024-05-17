@@ -1,0 +1,18 @@
+/* Custom Styles */
+
+@import "vars";
+@import "bootstrap-5.3.3/scss/bootstrap.scss";
+@import "bootstrap-icons-1.11.3/bootstrap-icons.scss";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@function invert($color, $amount: 100%) {
+    $inverse: change-color($color, $hue: hue($color) + 180);
+    @return mix($inverse, $color, $amount);
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,20 @@
+---
+title: Our Events - Children 4 World Children
+---
+
+<main class="page-our-events">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Our Events Page Title</h1>
+                <p>Our Events Page Content</p>
+                <ul>
+                    {% for event in site.event %}
+                        <li>
+                            <a href="{{ event.url }}">{{ event.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+</main>

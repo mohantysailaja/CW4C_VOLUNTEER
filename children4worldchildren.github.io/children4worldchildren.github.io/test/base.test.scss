@@ -1,0 +1,8 @@
+@import 'true';
+@import '../src/_sass/base.scss';
+
+@include describe('Base SASS Functions') {
+    @include it('expects that invert will invert given colour') {
+        @include assert-equal(invert(#003366), #663300);
+    }
+}

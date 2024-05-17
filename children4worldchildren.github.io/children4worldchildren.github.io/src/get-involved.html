@@ -1,0 +1,20 @@
+---
+title: Get Involved with Children 4 World Children
+---
+
+<main class="page-get-involved">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Get Involved Page Title</h1>
+                <p>Get Involved Page Content</p>
+                <ul>
+                    {% for way in site.get-involved %}
+                        <li>
+                            <a href="{{ way.url }}">{{ way.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+</main>
